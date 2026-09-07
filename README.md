@@ -10,7 +10,7 @@ Agent Team
 - The `description` field is the trigger. If an agent isn't firing when you
   expect, tighten its description. If it fires when you don't want it, narrow it.
 
-## Adding a skill from a YouTube video (your use case)
+## Adding a skill from a YouTube video or your use case
 1. Watch the video, distill the method into steps.
 2. Create `.claude/skills/your-skill-name.md`.
 3. Write YAML front matter: `name` + a precise `description` saying when to use it.
@@ -40,14 +40,14 @@ Process source of truth: [`docs/client-lifecycle-playbook.md`](docs/client-lifec
 ## Build order (do NOT build all at once)
 Build one agent end-to-end, prove it on real work, then add the next.
 
-1. ✅ Prospecting Agent — built (lowest risk, read-heavy, no send-gate)
-2. ✅ Outreach Agent — drafts cold email (email-only v1; dial stats deferred). SEND GATE: drafts only.
-3. ✅ Discovery/Close Agent — Mode 1 pre-call prep + Mode 2 build-strategy doc (ROI from real
+1. Prospecting Agent — built (lowest risk, read-heavy, no send-gate)
+2.  Outreach Agent — drafts cold email (email-only v1; dial stats deferred). SEND GATE: drafts only.
+3.  Discovery/Close Agent — Mode 1 pre-call prep + Mode 2 build-strategy doc (ROI from real
    discovery answers). Product-agnostic method + swappable offer pack.
-4. ✅ Build Agent — gated receptionist build (config → render → deploy → QA), stops at every human
+4.  Build Agent — gated receptionist build (config → render → deploy → QA), stops at every human
    gate. Drives the separate [receptionist-template](https://github.com/stinkyy123/receptionist-template) repo.
-5. ✅ Handover Agent — stub (Phase 3: Loom, one-pager, backups, acceptance signoff).
-6. ✅ Retainer/Ops Agent — stub (Phase 4: monitoring, monthly review, scope-guard).
+5.  Handover Agent — stub (Phase 3: Loom, one-pager, backups, acceptance signoff).
+6.  Retainer/Ops Agent — stub (Phase 4: monitoring, monthly review, scope-guard).
 
 ## Agents
 | Agent | Type | Reads | Writes / acts |
